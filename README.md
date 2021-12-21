@@ -13,3 +13,5 @@ curl -fLo ~/.vimrc \
 
 
 建议大家在看看.vimrc 配置文件 了解更多用法。
+
+Using coc extensions https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
