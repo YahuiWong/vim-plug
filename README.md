@@ -3,7 +3,7 @@
 运行命令配置一个强大的VIM编辑器。 
  
 ```bash
-# install git 
+# install git nodejs go dotnet python
 curl -sL install-node.vercel.app/lts | sudo  bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
