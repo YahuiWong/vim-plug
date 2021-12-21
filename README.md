@@ -17,7 +17,8 @@ curl -fLo ~/.vimrc \
 
 Using coc extensions https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
 
-vim -c 'PlugUpdate | q'
-vim -c 'CocCommand go.install.tools | q'
+vim -c 'PlugUpdate -sync|q'
+vim -c 'CocUpdate  -sync |q'
+vim -c 'CocCommand -sync  go.install.tools | q'
 
 vim -c 'OmniSharpInstall | q'
