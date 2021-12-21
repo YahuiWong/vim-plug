@@ -3,6 +3,7 @@
 运行命令配置一个强大的VIM编辑器。 
  
 ```bash
+# install git 
 curl -sL install-node.vercel.app/lts | sudo  bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -16,7 +17,7 @@ curl -fLo ~/.vimrc \
 
 Using coc extensions https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
 
-
+vim -c 'PlugUpdate | q'
 vim -c 'CocCommand go.install.tools | q'
 
 vim -c 'OmniSharpInstall | q'
