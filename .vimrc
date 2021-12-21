@@ -1,30 +1,30 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
-Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
-Plug 'voldikss/coc-tasks', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json',  {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tsserver',  {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
-Plug 'fannheyward/coc-pyright', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc-highlight'
+Plug 'neoclide/coc-eslint'
+Plug 'weirongxu/coc-explorer'
+Plug 'voldikss/coc-tasks'
+Plug 'neoclide/coc-json'
+Plug 'neoclide/coc-tsserver'
+Plug 'neoclide/coc-snippets'
+Plug 'neoclide/coc-git'
+Plug 'fannheyward/coc-pyright'
 Plug 'mattn/emmet-vim'
-Plug 'neoclide/coc-html', {'branch': 'release'}
-Plug 'yaegassy/coc-html-css-support', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
-Plug 'fannheyward/coc-sql', {'do': 'yarn install --frozen-lockfile'}
-Plug 'josa42/coc-sh', {'do': 'yarn install --frozen-lockfile'}
-Plug 'fannheyward/coc-markdownlint', {'do': 'yarn install --frozen-lockfile'}
-Plug 'weirongxu/coc-markdown-preview-enhanced', {'do': 'yarn install --frozen-lockfile'}
-Plug 'josa42/coc-go',{'branch': 'release'}
-Plug 'coc-extensions/coc-powershell', {'branch': 'release'}
-Plug 'coc-extensions/coc-omnisharp', {'branch': 'release'}
-Plug 'iamcco/coc-flutter', {'do': 'yarn install --frozen-lockfile'}
-Plug 'voldikss/coc-cmake', {'do': 'yarn install --frozen-lockfile'}
-Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-html'
+Plug 'yaegassy/coc-html-css-support'
+Plug 'neoclide/coc-css'
+Plug 'neoclide/coc-yaml'
+Plug 'neoclide/coc-java'
+Plug 'fannheyward/coc-sql'
+Plug 'josa42/coc-sh'
+Plug 'fannheyward/coc-markdownlint'
+Plug 'weirongxu/coc-markdown-preview-enhanced'
+Plug 'josa42/coc-go'
+Plug 'coc-extensions/coc-powershell'
+Plug 'coc-extensions/coc-omnisharp'
+Plug 'iamcco/coc-flutter'
+Plug 'voldikss/coc-cmake'
+Plug 'clangd/coc-clangd'
 
 call plug#end()
