@@ -1,30 +1,15 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'neoclide/coc.nvim'
-Plug 'neoclide/coc-highlight'
-Plug 'neoclide/coc-eslint'
-Plug 'weirongxu/coc-explorer'
-Plug 'voldikss/coc-tasks'
-Plug 'neoclide/coc-json'
-Plug 'neoclide/coc-tsserver'
-Plug 'neoclide/coc-snippets'
-Plug 'neoclide/coc-git'
-Plug 'fannheyward/coc-pyright'
-Plug 'mattn/emmet-vim'
-Plug 'neoclide/coc-html'
-Plug 'yaegassy/coc-html-css-support'
-Plug 'neoclide/coc-css'
-Plug 'neoclide/coc-yaml'
-Plug 'neoclide/coc-java'
-Plug 'fannheyward/coc-sql'
-Plug 'josa42/coc-sh'
-Plug 'fannheyward/coc-markdownlint'
-Plug 'weirongxu/coc-markdown-preview-enhanced'
-Plug 'josa42/coc-go'
-Plug 'coc-extensions/coc-powershell'
-Plug 'coc-extensions/coc-omnisharp'
-Plug 'iamcco/coc-flutter'
-Plug 'voldikss/coc-cmake'
-Plug 'clangd/coc-clangd'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 
+let g:coc_global_extensions = ['coc-highlight','coc-eslint','coc-explorer','coc-tasks','coc-json','coc-tsserver','coc-snippets','coc-git','coc-pyright','coc-html','coc-html-css-support','coc-css','coc-yaml','coc-java','coc-sql','coc-sh','coc-markdownlint','coc-markdown-preview-enhanced','coc-go','coc-powershell','coc-flutter','coc-cmake','coc-clangd']
+
+Plug 'OmniSharp/omnisharp-vim'
+" Use the stdio version of OmniSharp-roslyn - this is the default
+let g:OmniSharp_server_stdio = 1
+
+" We bind it to <leader>e here, feel free to change this
+nmap <leader>e :CocCommand explorer<CR>
+
+Plug 'mattn/emmet-vim'
 call plug#end()
