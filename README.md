@@ -21,4 +21,4 @@ vim -c 'PlugUpdate -sync|q'
 vim -c 'CocUpdate  -sync |q'
 vim -c 'CocCommand -sync  go.install.tools | q'
 
-vim -c 'OmniSharpInstall | q'
+vim -c 'OmniSharpInstall  -sync | q'
