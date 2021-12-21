@@ -20,8 +20,7 @@ Plug 'fannheyward/coc-sql', {'do': 'yarn install --frozen-lockfile'}
 Plug 'josa42/coc-sh', {'do': 'yarn install --frozen-lockfile'}
 Plug 'fannheyward/coc-markdownlint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'weirongxu/coc-markdown-preview-enhanced', {'do': 'yarn install --frozen-lockfile'}
-Plug 'josa42/coc-go', {'do': 'yarn install --frozen-lockfile'}
-Plug 'xiyaowong/coc-golines', {'do': 'yarn install --frozen-lockfile'}
+Plug 'josa42/coc-go',{'branch': 'release'}
 Plug 'coc-extensions/coc-powershell', {'branch': 'release'}
 Plug 'coc-extensions/coc-omnisharp', {'branch': 'release'}
 Plug 'iamcco/coc-flutter', {'do': 'yarn install --frozen-lockfile'}
