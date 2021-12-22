@@ -70,6 +70,7 @@ echo $userpath
 [environment]::SetEnvironmentvariable("Pathbackup"+(([DateTime]::Now.ToUniversalTime().Ticks - 621355968000000000)/10000).tostring().Substring(0,13), $userpath, "User")
 $userpath="$userpath;$HOME\.jenv"
 [environment]::SetEnvironmentvariable("Path", $userpath, "User")
+$env:Path=$userpath # 马上生效PATH变量
 ``` -->
 
 
