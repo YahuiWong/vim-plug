@@ -52,6 +52,26 @@ vim -c 'OmniSharpInstall  -sync | q'
 
 
 
+<!-- jenv
+```bash
+git clone https://github.com/jenv/jenv.git ~/.jenv
+# Shell: bash
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(jenv init -)"' >> ~/.bash_profile
+# Shell: zsh
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
+```
+```powershell
+git clone https://github.com/FelixSelter/JEnv-for-Windows.git $HOME/.jenv
+
+$userpath = [environment]::GetEnvironmentvariable("Path", "User")
+echo $userpath
+[environment]::SetEnvironmentvariable("Pathbackup"+(([DateTime]::Now.ToUniversalTime().Ticks - 621355968000000000)/10000).tostring().Substring(0,13), $userpath, "User")
+$userpath="$userpath;$HOME\.jenv"
+[environment]::SetEnvironmentvariable("Path", $userpath, "User")
+``` -->
+
 
 参考：
 
