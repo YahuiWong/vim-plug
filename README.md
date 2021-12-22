@@ -46,10 +46,10 @@ Using coc extensions https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensi
 
 ```bash
 vim -c 'PlugUpdate -sync|q'
-vim -c 'CocUpdate  -sync |q'
-vim -c 'CocCommand   go.install.tools | q'
-vim -c 'CocCommand clangd.install | q'
-vim -c 'OmniSharpInstall  -sync | q'
+vim -c 'CocUpdateSync|q'
+vim -c 'CocCommand go.install.tools |q'
+vim -c 'CocCommand clangd.install |q'
+vim -c 'OmniSharpInstall  -sync |q'
 ```
 
 
