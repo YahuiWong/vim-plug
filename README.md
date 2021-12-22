@@ -75,6 +75,13 @@ $userpath="$userpath;$HOME\.jenv"
 $env:Path=$userpath # 马上生效PATH变量
 ``` -->
 
+<!--
+
+https://vimjc.com/vim-python-ide.html
+https://github.com/chxuan/vimplus
+
+-->
+
 
 参考：
 
