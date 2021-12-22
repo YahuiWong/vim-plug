@@ -50,3 +50,11 @@ vim -c 'CocUpdate  -sync |q'
 vim -c 'CocCommand -sync  go.install.tools | q'
 
 vim -c 'OmniSharpInstall  -sync | q'
+
+
+
+
+参考：
+
+https://github.com/junegunn/vim-plug
+https://github.com/nvm-sh/nvm
