@@ -1,8 +1,7 @@
 
+# 运行命令配置一个强大的VIM编辑器。 
 
-运行命令配置一个强大的VIM编辑器。 
-
-unix
+## unix
 
 ```bash
 # install git nodejs go dotnet python
@@ -23,7 +22,7 @@ curl -fLo ~/.vimrc \
           https://raw.githubusercontent.com/YahuiWong/vim-plug/master/.vimrc
 ```
 
-powershell
+## powershell
 
 ```powershell
 #admin
