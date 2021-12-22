@@ -6,8 +6,15 @@ unix
 
 ```bash
 # install git nodejs go dotnet python
-curl -sL install-node.vercel.app/lts | sudo  bash
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+nvm install v16.13.1 
+nvm use 16.13.1
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
@@ -19,6 +26,13 @@ curl -fLo ~/.vimrc \
 powershell
 
 ```powershell
+#admin
+
+choco install nvm -y
+nvm install v16.13.1 
+nvm use 16.13.1
+nvm on
+
 
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
