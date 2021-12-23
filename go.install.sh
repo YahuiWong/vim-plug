@@ -8,6 +8,6 @@ export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin
 
 source /etc/profile
 
-curl -o go.linux-amd64.tar.gz https://dl.google.com/go/go1.17.5.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go.linux-amd64.tar.gz
+sudo curl https://dl.google.com/go/go1.17.5.linux-amd64.tar.gz |sudo tar -xz -C /usr/local
+
 go version
