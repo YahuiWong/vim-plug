@@ -46,7 +46,21 @@ Using coc extensions https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensi
 
 ```bash
 
-pip install -U jedi-language-server
+npm config set registry https://registry.npmmirror.com
+npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
+npm config get registry # 查看是否配置成功
+npm config list  # 查看npm当前配置
+npm i -g cnpm 
+cnpm i -g rimraf typescript ts-node  yarn
+
+
+
+#node-sass设置镜像
+yarn config set registry https://registry.npmmirror.com -g
+yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip config set global.trusted-host "pypi.org files.pythonhosted.org pypi.python.org pypi.tuna.tsinghua.edu.cn"
+pip install -U jedi-language-server 
 
 vim -c 'PlugUpdate -sync|q'
 vim -c 'CocUpdateSync|q'
