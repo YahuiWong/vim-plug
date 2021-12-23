@@ -45,6 +45,9 @@ iwr -useb https://raw.githubusercontent.com/YahuiWong/vim-plug/master/.vimrc |`
 Using coc extensions https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
 
 ```bash
+
+pip install -U jedi-language-server
+
 vim -c 'PlugUpdate -sync|q'
 vim -c 'CocUpdateSync|q'
 vim -c 'CocCommand go.install.tools |q'
