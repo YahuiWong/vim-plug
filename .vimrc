@@ -79,6 +79,10 @@ func! CompileRunGcc()
     exec "MarkdownPreview"
   elseif &filetype == 'vimwiki'
     exec "MarkdownPreview"
+  elseif &filetype == 'go'
+    exec "!time go run %<"
+  elseif &filetype == 'csproj'
+    exec "!time dotnet run --project %<"
   endif
 endfunc
 ""实用设置
