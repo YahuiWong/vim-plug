@@ -15,6 +15,10 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 nvm use lts
 
+# linux sudo 
+sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"
+sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
 cp ~/.vimrc ~/.vimrc.back`date '+%Y%m%d%H%M%S'`
