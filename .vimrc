@@ -26,18 +26,20 @@ func! CompileRunGcc()
   elseif &filetype == 'html'
     exec "!firefox % &"
   elseif &filetype == 'markdown'
-    exec "MarkdownPreview"
+    :CocCommand markdown-preview-enhanced.openPreview
+"    exec "MarkdownPreview"
   elseif &filetype == 'vimwiki'
-    exec "MarkdownPreview"
+    :CocCommand markdown-preview-enhanced.openPreview
+"    exec "MarkdownPreview"
   elseif &filetype == 'go'
-    exec "!time go run %<"
-  elseif &filetype == 'csproj'
-    exec "!time dotnet run --project %<"
+    :GoRun 
+  elseif &filetype == 'cs'
+    exec "!time dotnet run  % "
   endif
 endfunc
 
 call plug#begin('~/.vim/plugged')
- 
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
  
@@ -95,7 +97,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 " ===coc.nvim
 " ===
  
-let g:coc_global_extensions = ['coc-explorer','coc-highlight','coc-prettier','coc-eslint','coc-json','coc-tsserver','coc-jedi','coc-snippets','coc-html','coc-html-css-support','coc-css','coc-emmet','coc-yaml','coc-java','coc-sql','coc-sh','coc-markdownlint','coc-markdown-preview-enhanced','coc-go','coc-powershell','coc-flutter','coc-cmake','coc-clangd']
+let g:coc_global_extensions = ['coc-explorer','coc-webview','coc-highlight','coc-prettier','coc-eslint','coc-json','coc-tsserver','coc-jedi','coc-snippets','coc-html','coc-html-css-support','coc-css','coc-emmet','coc-yaml','coc-java','coc-sql','coc-sh','coc-markdownlint','coc-markdown-preview-enhanced','coc-go','coc-powershell','coc-flutter','coc-cmake','coc-clangd']
 let g:coc_disable_startup_warning = 1
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
