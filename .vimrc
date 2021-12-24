@@ -32,14 +32,14 @@ func! CompileRunGcc()
     :CocCommand markdown-preview-enhanced.openPreview
 "    exec "MarkdownPreview"
   elseif &filetype == 'go'
-    :GoRun 
+     exec "!go run % "
   elseif &filetype == 'cs'
     exec "!time dotnet run  % "
   endif
 endfunc
 
 call plug#begin('~/.vim/plugged')
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+"Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
  
