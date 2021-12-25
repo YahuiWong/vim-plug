@@ -66,11 +66,11 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip config set global.trusted-host "pypi.org files.pythonhosted.org pypi.python.org pypi.tuna.tsinghua.edu.cn"
 pip install -U jedi-language-server 
 
-vim -c 'PlugUpdate -sync|q'
-vim -c 'CocUpdateSync|q'
+vim -c 'PlugUpdate |q'
+vim -c 'CocUpdate|q'
 vim -c 'CocCommand go.install.tools |q'
 vim -c 'CocCommand clangd.install |q'
-vim -c 'OmniSharpInstall  -sync |q'
+vim -c 'OmniSharpInstall  |q'
 ```
 
 
