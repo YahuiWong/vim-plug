@@ -1,4 +1,5 @@
 
+
 "*****************************************************************************
 "" Vim-Plug core
 "*****************************************************************************
@@ -26,8 +27,18 @@ endif
 
 " Required:
 call plug#begin(expand('~/.vim/plugged'))
+function! BuildYCM(info)
+  " info is a dictionary with 3 fields
+  " - name:   name of the plugin
+  " - status: 'installed', 'updated', or 'unchanged'
+  " - force:  set on PlugInstall! or PlugUpdate!
+  if a:info.status == 'installed' || a:info.force
+    !./install.py
+  endif
+endfunction
 
-"Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
@@ -169,7 +180,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 " ===coc.nvim
 " ===
  
-let g:coc_global_extensions = ['coc-explorer','coc-webview','coc-highlight','coc-prettier','coc-eslint','coc-json','coc-tsserver','coc-jedi','coc-snippets','coc-html','coc-html-css-support','coc-css','coc-emmet','coc-yaml','coc-java','coc-sql','coc-sh','coc-markdownlint','coc-markdown-preview-enhanced','coc-go','coc-powershell','coc-flutter','coc-cmake','coc-clangd']
+let g:coc_global_extensions = ['coc-explorer','coc-webview','coc-highlight','coc-prettier','coc-eslint','coc-json','coc-tsserver','coc-snippets','coc-html','coc-html-css-support','coc-css','coc-emmet','coc-yaml','coc-java','coc-sql','coc-sh','coc-markdownlint','coc-markdown-preview-enhanced','coc-powershell','coc-flutter','coc-cmake','coc-clangd']
 let g:coc_disable_startup_warning = 1
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -412,3 +423,6 @@ func! CompileRunGcc()
     exec "!time dotnet run  % "
   endif
 endfunc
+
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
