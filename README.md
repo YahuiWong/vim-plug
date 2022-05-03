@@ -4,7 +4,7 @@
 ## unix
 
 ```bash
-# install git nodejs go dotnet python
+# install curl vim  git nodejs go dotnet python3  python-is-python3
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
