@@ -19,8 +19,9 @@ nvm use lts
 sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"
 sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
 
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
+#curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+#    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
+
 cp ~/.vimrc ~/.vimrc.back`date '+%Y%m%d%H%M%S'`
 curl -fLo ~/.vimrc \
           https://raw.githubusercontent.com/YahuiWong/vim-plug/master/.vimrc
