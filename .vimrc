@@ -241,6 +241,7 @@ noremap <Leader>gd :Gvdiffsplit<CR>
 noremap <Leader>gr :GRemove<CR>
 
 " session management
+set sessionoptions-=blank
 nnoremap <leader>so :OpenSession<Space>
 nnoremap <leader>ss :SaveSession<Space>
 nnoremap <leader>sd :DeleteSession<CR>
