@@ -55,7 +55,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release','do': ':CocInstall'}
 Plug 'OmniSharp/omnisharp-vim'
 " Use the stdio version of OmniSharp-roslyn - this is the default
 let g:OmniSharp_server_stdio = 1
- 
+let g:OmniSharp_server_use_net6 = 1
 Plug 'tomasr/molokai'
 
 call plug#end()
