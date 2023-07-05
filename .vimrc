@@ -49,7 +49,7 @@ Plug 'mbbill/undotree/'
 Plug 'preservim/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-
+Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release','do': ':CocInstall'}
  
 Plug 'OmniSharp/omnisharp-vim'
