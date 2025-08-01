@@ -21,6 +21,6 @@ export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin
 
 source ~/.zshrc
 
-sudo curl https://dl.google.com/go/go1.20.5.linux-amd64.tar.gz |sudo tar -xz -C /usr/local
+sudo curl https://dl.google.com/go/go1.24.5.linux-amd64.tar.gz |sudo tar -xz -C /usr/local
 
 go version
