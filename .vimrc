@@ -36,15 +36,26 @@ function! BuildYCM(info)
     !./install.py
   endif
 endfunction
+" 先禁用 indentLine 的 conceal 功能
+let g:indentLine_setConceal = 0
+let g:indentLine_conceallevel = 0
+let g:indentLine_loaded = 0  " 延迟加载
+
+" NERDTree 配置（如果有）
+let g:NERDTreeAutoDeleteBuffer = 1
+let g:NERDTreeMinimalUI = 1
+
 
 "Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
 "Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
-Plug 'Yggdroot/indentLine'
+
 " Undo Tree
 Plug 'mbbill/undotree/'
+" indetLine
+Plug 'Yggdroot/indentLine'  " 注意：indentLine 的作者仓库
 " File navigation
 Plug 'preservim/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
