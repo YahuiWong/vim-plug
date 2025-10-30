@@ -25,6 +25,11 @@ sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
 cp ~/.vimrc ~/.vimrc.back`date '+%Y%m%d%H%M%S'`
 curl -fLo ~/.vimrc \
           https://raw.githubusercontent.com/YahuiWong/vim-plug/master/.vimrc
+
+mkdir -p ~/.vim/colors/
+curl -fLo ~/.vim/colors/molokai.vim \
+https://gitee.com/mirrors_tomasr/molokai/raw/master/colors/molokai.vim
+
 ```
 
 ## powershell
@@ -109,3 +114,4 @@ https://github.com/chxuan/vimplus
 https://github.com/junegunn/vim-plug
 
 https://github.com/nvm-sh/nvm
+
